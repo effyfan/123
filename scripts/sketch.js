@@ -26,7 +26,7 @@ function callback(e){
 }
 
 function setup() {
-  canvas = createCanvas(1024, 512);
+  canvas = createCanvas(windowWidth, windowHeight);
   mappa = new Mappa('Mapboxgl', apiKey);
   myMap = mappa.tileMap(options);
   myMap.overlay(canvas);
